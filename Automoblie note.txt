@@ -1,0 +1,187 @@
+Automotive System overview     HIL
+
+>> Life cycle of Automobile
+>> size and inpact on us
+>> Domains....>>mech
+		embe
+		s/w
+>> Evolution in each
+>> How does car works ...>>conventional
+			   hybrib
+			   elctrical
+
+(embeded and s/w)
+>> Data sheet Analysis & Application Notes
+>>Demos
+
+
+1807 >>> Isaac de Rivaz >> internal combution
+1886 >> Karl Benz  >>> petrol or gasoline
+
+
+1968 >> Volkswagen embed >> automobile industry
+1977 >> General motors Oldsmobile Torondo
+1981 >> 50000 of lines for domestic passenger car
+
+
+
+protocals
+14.7:1 
+ic 
+desiel
+petrol
+transmission
+egr
+cranksamp
+
+
+standered ltts model
+
+
+task1
+overview
+coventional auto mobile
+electric
+all the new features >>no autonamy to full autonamy
+..... how do we test the features 
+ protocals and processes
+
+
+task2
+
+
+
+
+
+
+individual ...... back on vehical
+
+
+
+task for day2
+
+>> Deep drive of Generic feature
+>> Deepdive of BCM[Respective]
+
+
+Day3
+Evolution of Models
+
+
+1. choose a car
+2.interface -- how does it work 
+
+
+
+
+3.i/p              
+
+user
+sensor i/p  o/p---datasheet
+		  operating voltage
+		  charcteristics
+
+
+4.Re Define
+ ---req
+ ---test plan
+
+
+requirements
+uml
+test plan
+skip 4wh
+before after
+
+
+
+wed 
+Presentation
+folder submission
+video
+
+
+Add on
+... Hardware support package
+>>.. simulink >.Aurdino
+
+
+rules in smulink
+Hangeraian notation
+
+
+modeling
+modeling explorer
+add
+
+titles req
+no crossover
+
+
+3 steps
+1.model cleanup and compliance.>>>title
+				>>MAAB Guidlines
+				>>No cross overlogic subsystem
+
+2.model evolution >> i/p & logic
+3.mcdc
+>>> condition check
+>>> exicution check
+>>> decision check
+>>> logic sub system
+5 rules of maab
+
+
+laplace transform
+https://byjus.com/maths/laplace-transform/ 
+
+
+code percent
+
+
+project model
+project documents
+compliance reports
+test result
+Generated C code // other xsl file //elf files
+previous model
+video
+full report generated
+
+overall requirement
+keylearning
+//script
+
+
+% options = simset('SrcWorkspace','current');
+% Ans = sim('C:\99003759\Matlab practice\Sunroof_Auto.slx',[],options)
+% %xlswrite("Out.xlsx",Ans)
+% t = table(Simulink.SimulationData.Dataset,Simulink.SimulationOutput)
+% writetable(t,'Out.xls')
+open_system('Sunroof_Manual')
+set_param('Sunroof_Manual','LoggingToFile','on')
+sim('Sunroof_Manual')
+
+
+
+
+% options = simset('SrcWorkspace','current');
+% Ans = sim('C:\99003759\Matlab practice\Sunroof_Auto.slx',[],options)
+% %xlswrite("Out.xlsx",Ans)
+% t = table(Simulink.SimulationData.Dataset,Simulink.SimulationOutput)
+% writetable(t,'Out.xls')
+open_system('Sunroof_Manual')
+set_param('Sunroof_Manual','LoggingToFile','on')
+sim('Sunroof_Manual')
+DSRef = Simulink.SimulationData.DatasetRef('out.mat','BCM_Out_Sun');
+SimDataSig = DSRef{10};
+DStore = SimDataSig.Values;
+preview(DStore)
+
+
+https://ww2.mathworks.cn/help/simulink/slref/matlab.io.datastore.simulationdatastore-class.html
+
+
+MCQ ------  30%
+Team -----  35%
+Single ---- 35%

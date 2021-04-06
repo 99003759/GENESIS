@@ -1,0 +1,26 @@
+		CAN
+CAN manual
+
+Nodes does not have specific address, it has identifiers
+1-recessive
+0-dominant
+logic uses Wired-AND
+Features
+Bus-access by message priority
+>> Carrier Sense Multiple Access/Collision Resolution
+
+
+
+
+
+crc bit stuffing
+ bit stuffing is opposite bit inserted after 5 continoues same data
+
+tq time quanta
+lenght of one time quantam = BRP/fsys
+  termination resistor Rt = 124 ohms
+
+
+		UDS
+Unified diagnostic structure 
+iso-14229

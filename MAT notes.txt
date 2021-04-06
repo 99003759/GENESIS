@@ -1,0 +1,114 @@
+1.to get matlab cer
+2.automation script
+3.simulink 
+
+
+
+ 2.system engineering brief:managing complexity with a systems driven
+      Evolution of product engineerig & directions
+
+   What is model based engineering/design
+	1.Requirement Model
+		SYSML
+      	2.System Models
+	  Sub-System
+	3.Function Simulation 
+	4.Analysis Models
+	5.Test Simulation Models
+	6.Hardware Simulation Models
+	7.System integration Models
+Why do model based approach?
+ To improve communication        To improve Quality
+ To increase Productivity        To Reduce Risk
+
+
+When "Not to" adopt model based approach
+1.you cannot model everything
+2.Hard to model non-functional 
+
+
+		ANSYS Systems Portfolio
+
+
+Control Design Workflow
+
+MIL(model)
+SIL(software)
+PIL(processer)
+HIL(hardware)
+
+
+Types of system modeling techniques
+ equation           data
+ Mathematical Models         Gray Box Approach    Black box approach
+1.First Principles           1.parameter               1.Look tables
+2.component based		estimation             2.system identification
+  physical models                                        models
+
+
+          matalab class
+ 
+ to save simulink model
+1.open commanly used blocks in library
+sources is input signals
+sinks are outputs
+until we click on the block it does not show name to change it by click format show block name
+to change stope time if we need
+click on out in workspace
+and click simulaton output//t.out
+go to simulation and modeling give contol e and go to slover details change max step size to change samples
+
+maskeditor
+imshow('location\name\extension i.e jpg')
+disp('location\name\extension i.e jpg')
+image(of)('location\name\extension i.e jpg')
+
+parmeter and dialog  >> edit >>prompt
+
+to edit subsystem name 
+goto documentation
+give name in type
+
+right click show value delay
+
+lookup table
+extrapolation >> clip
+
+
+          Modeling Differential Equation
+
+F = ma
+Fr -- friction
+   >> areodynamic drag
+Ff-Fr=ma
+Ff=ma+Fr --> Fr=bv
+	     v--->velocity
+	     b=damping co-efficent
+Ff= m(dv/dt)+bv
+Ff=mv'+bv
+mv'= Ff-bv
+v' = (Ff-bv)/m
+
+i/p...>>Ff
+o/p...>>v
+
+
+
+
+                  MIL Testing
+
+signal builder ...>>> creating excel and click on the signal builder import the excel
+add signal
+select all signal
+confirm
+
+
+exicution order
+
+
+algoritham 
+scripting
+modeling
+
+
+
