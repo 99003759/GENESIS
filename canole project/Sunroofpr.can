@@ -1,0 +1,61 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Sunroof su;
+  message ObstractMsg ob;
+  int var=10;
+}
+
+on key 'o'
+{
+  if(var<100)
+  {
+    var = var+10;
+    su.SunroofStatus = var;
+    output(su);
+  }
+}
+
+on key 'c'
+{
+  if(var>0)
+    {
+    var = var-10;
+    su.SunroofStatus = var;
+    output(su);
+    }
+  /*if(var>0 && ob.Obstract==1)
+  {
+    var = 90;
+    su.SunroofStatus=var;
+    output(su);
+  }
+  else
+  {
+    if(var>0)
+    {
+    var = var-10;
+    su.SunroofStatus = var;
+    output(su);
+    }
+  }*/
+}
+
+on envVar sunroofOp
+{
+  su.SunroofStatus=@sunroofOp;
+  output(su);
+}
+on message ObstractMsg
+{
+  if(this.Obstract==1)
+  {
+    su.SunroofStatus=100;
+    output(su);
+  }
+}

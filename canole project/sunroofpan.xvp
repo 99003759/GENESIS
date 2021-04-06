@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="sunroofpan">
+    <Object Type="Vector.CANalyzer.Panels.Design.MeterControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="MeterControl1" ControlName="Meter">
+      <Property Name="Name">MeterControl1</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">128, 36</Property>
+      <Property Name="ScaleMax">64</Property>
+      <Property Name="SymbolConfiguration">5;2;SunData;;Sunroof;SunroofStatus;1;CAN;;-1;;;</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 270</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
